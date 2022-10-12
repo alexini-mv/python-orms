@@ -4,7 +4,7 @@
 # atributo será una columna dentro de la tabla. Y cada columna tendrá un tipo de 
 # dato especifico. Además puede existir relaciones entre las diferentes tablas.
 from sqlalchemy import Column, String, Integer
-from .base import Base
+from base import Base
 
 
 class User(Base):
@@ -12,7 +12,7 @@ class User(Base):
     __tablename__ = 'users'
     
     # Declaramos las columnas de la tabla.
-    id = Column(String, primary_key=True)
+    id = Column(Integer, primary_key=True)
     name = Column(String(30))
     last_name = Column(String(30))
     age = Column(Integer)

@@ -1,6 +1,5 @@
-from requests import session
-from .base import Base, engine, Session
-from .models import User
+from base import Base, engine, Session
+from models import User
 
 
 def main():
@@ -30,15 +29,12 @@ def main():
 
     # Se puede agregar uno por uno cada registro con el método session.add()
     # o como en este caso, agregar todos a la vez
-
     session.add_all([shinji, rei, asuka, mari])
 
     # Para guardar definitivamente los datos en la BD, debemos emplear el método commit
-
     session.commit()
 
     # Cerramos la sesión cuando hayamos terminado de trabajar
-
     session.close()
 
 if __name__ == '__main__':
