@@ -11,7 +11,9 @@ from sqlalchemy.orm import sessionmaker
 # Definimos los tres objetos que exportaremos. El primero es el objeto 
 # que creará la conexión a la base de datos.
 engine = create_engine('sqlite:///BaseDeDatos.db')
+
 # Iniciamos una sesión
 Session = sessionmaker(bind=engine)
+
 # Declaramos el objeto que construirá el schema de la Base de Datos
 Base = declarative_base()

@@ -25,4 +25,4 @@ class User(Base):
     # Este método no es obligatorio, pero es bueno tenerlo para saber como es representado
     # el objeto que estamos declarando
     def __repr__(self) -> str:
-        return f"User(id={self.uid}, name={self.name}, last_name={self.last_name}, age={self.age})"
+        return f'User(id={self.id}, name="{self.name}", last_name="{self.last_name}", age={self.age})'
