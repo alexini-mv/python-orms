@@ -17,8 +17,7 @@ class User(Base):
     last_name = Column(String(30))
     age = Column(Integer)
 
-    def __init__(self, uid, name, last_name, age) -> None:
-        self.uid = uid 
+    def __init__(self, name: str, last_name: str, age: int) -> None:
         self.name = name 
         self.last_name = last_name
         self.age = age
