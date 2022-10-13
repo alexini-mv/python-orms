@@ -5,4 +5,7 @@ Para implementar un ORM con la libreria de SQLAlchemy, se necesita implementar t
 2. `Models`: En este archivo se declaran los modelos, esto es, las clases que permitiran instanciar los objetos que serán guardados en la base de datos.
 3. `Main`:  Se implementa la lógica para manipular la información en la BD. Esto es, abrir la conexión a la BD, instanciar los objetos, guardar cada objetos dentro de la tabla y cerrar la conexión
 
-Dentro de cada archivo, tiene ejemplo del código como es implementado y comentarios que explican que hace cada sentencia.
+Dentro de cada archivo, tiene ejemplos en código de como debe ser implementado, además de comentarios que explican que hace cada sentencia.
+
+## Referencias
+* Documentación oficial de [SQLAlchemy](https://docs.sqlalchemy.org/en/14/orm/).

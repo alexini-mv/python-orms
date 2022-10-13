@@ -45,9 +45,8 @@ def read_from_db():
     with Session() as session:
 
         # Declaramos un query usando la sintaxis del objeto select de SQLAlchemy
-        query = select(User).where(
-            User.name.in_(["Mari", "Asuka"])
-        )
+        query = select(User).where(User.name.in_(["Mari", "Asuka"]))
+        
         # Ejecutamos el query dentro de la sesión a la base de datos
         for user in session.scalars(query):
             print(user)
