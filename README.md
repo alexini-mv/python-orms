@@ -8,3 +8,9 @@ En este tutorial se revisa tres librerias para implementar ORM en python:
 2. SQLModel
 3. Peewee
 
+De las tres librerias. La más fácil de implementar es **Peewee**, seguido por nivel de complejidad por **SQLModel**, siendo **SQLAlchemy** la más compleja.
+
+## Referencias
+* Documentación de [SQLAlchemy](https://docs.sqlalchemy.org/en/14/orm/).
+* Documentación de [SQLModel](https://sqlmodel.tiangolo.com/).
+* Documentación de [Peewee](http://docs.peewee-orm.com/en/latest/index.html).
