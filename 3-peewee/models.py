@@ -6,8 +6,8 @@ from peewee import SqliteDatabase
 # Importamos las clases especiales que indicarán el tipo de dato en la columna
 from peewee import CharField, IntegerField, PrimaryKeyField
 
-# Definimos el tipo de base de datos que realizará la conexción.
-db = SqliteDatabase('angels.db')
+# Definimos el tipo de base de datos que realizará la conexión.
+db = SqliteDatabase('BaseDeDatos.db')
 
 
 class Angel(Model):
